@@ -1,0 +1,21 @@
+body{font-family: 'Roboto', sans-serif;}
+.container{position: relative; width: 1280px; margin: 0 auto;}
+#top{background: #4caf50; color: #fff; height: 100px; line-height: 100px; padding: 0 42px 0;}
+#top h1{margin: 0;}
+
+.wrapper{position: relative; margin: 30px 0 0; overflow: hidden;}
+#menubar{height: auto; width: 222px; position: absolute;}
+#menubar ul{list-style-type: none; padding: 0; margin: 0;}
+#menubar ul li{width: 190px; height: 30px; line-height: 30px; border: 1px solid #808080; padding: 0 0 0 30px; background: #d3d3d3; margin: 0 0 2px; border-radius: 5px;}
+#menubar ul li:hover{background: #4caf50;}
+
+#main{position: relative; width: 1035px; right: 0; top: 0; float: right;}
+#main h1{margin: 0;}
+
+.colorbuttons{color: #fff; text-decoration: none; display: inline-block; height: 25px; line-height: 25px; padding: 0 6px;}
+#greenbutton{background: #008000;}
+#orangebutton{background: #ffa500;}
+#bluebutton{background: #0000ff;}
+#redbutton{background: #ff0000;}
+
+#bottom{width: 100%; text-align: center; background: #f1f1f1; border: 1px solid #d4d4d4; height: 55px; line-height: 55px; margin: 15px 0 0;}
