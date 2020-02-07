@@ -1,0 +1,40 @@
+h3 {margin: 0;}
+body {background: #e6e6e6;}
+.topnav {margin: 0; border-radius: 0;}
+.navlinks {float: right;}
+.navbar-header {color: #ffff; font-weight: bold;}
+.logo span {color: #ff493c;}
+
+.banner {padding: 0; height: 500px; background: #000 url(../images/head-bg.jpg) bottom center no-repeat;}
+.banner img {width: 100%; padding: 0;}
+
+.prof-con {position: relative; height: auto; min-height: 200px; padding: 0;}
+#prof-wrap {position: relative; margin: -95px 0 0; overflow: hidden; height: auto;}
+.profpic {width:184px; height: 184px; margin: -120px 0 0;}
+
+.prof-left {text-align: center; margin: 120px 0 0; position: relative; padding: 0 15px 15px 0;}
+	.prof-left > h3 {padding: 15px 0 0;}
+	.prof-left-inner {background: #fff; padding: 0 15px 15px 15px;}
+	#prof-quote {margin: 0 0 30px;}
+	#socialmedia {margin: 30px 0;}
+	.prof-left #socialmedia a img {width: 30px;}
+
+.prof-right {margin: 120px 0 0; position: relative; padding: 0;}
+	.prof-right-inner {background: #fff; padding: 15px; line-height: 26px; margin: 0 0 15px; min-height: 318px; height: auto;}
+	.readmore {background-color: #ff493c; border-radius: 0; border: 0; font-size: 14px; padding: 0; display: block; height: 40px; line-height: 40px; width: 150px;}
+	.readmore:hover{background-color: #ff493c;}
+	.gal-text {margin: 0 0 25px;}
+
+.bottom {position: relative; overflow: hidden; padding: 0;}
+.bottom-left {background: #888787; height: 500px;}
+.bottom-right {background: #ff493c; height: 500px;}
+#newsletter {text-align: center; margin: 0; padding: 30px; position: absolute; width: 1000px; max-width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff;}
+	#newsletter #name, #newsletter #email {height: 50px; border-radius: 0; font-size: 16px;}
+	#newsletter #message {height: 100px; font-size: 16px;}
+	#ntitle {font-size: 25px; font-weight: bold; width: 100%; line-height: 35px; margin: 0 0 15px;}
+	#nhead span {display: block; font-weight: bold; font-size: 45px; color: #000;}
+	#newsletter .nbtn {background: #ff493c; border-radius: 0; color: #fff; font-weight: bold; font-size: 17px; border: 0;}
+
+.footnav {margin: 0; border-radius: 0; margin: 25px 0 0;}
+
+
