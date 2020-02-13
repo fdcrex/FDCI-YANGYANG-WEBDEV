@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Exercises</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		body {font-family: 'Roboto', sans-serif;}
+		span {font-weight: bold;}
+		p {padding: 0; margin: 0;}
+		input, input[type=submit], button {height: 30px; margin: 10px 0 0;}
+		input[type=submit] {border-radius: 0;}
+		input {border-radius: 5px; border: solid 1px #8a8a8a; padding: 0px 12px;}
+		.wrap {margin: 0 auto; width: 800px;}
+		#part1, #part2, #part3 {margin: 0 0 35px; line-height: 20px;}
+		#answerPart1, #answerPart2, #answerPart3 {font-weight: normal;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="part1">
+			<p><span>Instructions:</span> Write a function that would accept a string parameter and output the longest word within the string.</p>
+			<p><span>Example string:</span> The quickest brown fox</p>
+			<p><span>Expected output: </span> quickest</p>
+			
+			<p id="errorMsg1" style="color: #d20c0c; height: 15px;"></p>
+			<input type="text" name="words" id="words" placeholder="Enter a sentence here" />
+			<button type="button" onclick="longWord()">Submit</button>
+			
+			<p>Answer: <span id="answerPart1"></span></p>
+		</div>
+		<div id="part2">
+			<p><span>Instructions:</span> Write a function that accepts a number parameter and output if the number is prime or not.</p>
+			<p><span>Note: </span> A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. So 1 is automatically not a prime number.</p>
+			
+			<p id="errorMsg2" style="color: #d20c0c; height: 15px;"></p>
+			<input type="text" name="number" id="number" placeholder="Enter a number here" />
+			<button type="button" onclick="primeOrNot()">Submit</button>
+			
+			<p>Answer: <span id="answerPart2"></span></p>
+		</div>
+		<div id="part3">
+			<p><span>Instructions:</span> Create a form that has 1 input for hour. On submit, display equivalent minutes from the inputted hour.</p>
+
+			<form action="#" method="post" onsubmit="convertMins(event)" name="myForm">
+				<p id="errorMsg3" style="color: #d20c0c; height: 15px;"></p>
+				<input type="number" name="hour" id="hour" placeholder="Enter a hour here" />
+				<input type="submit" name="sumbit" value="Submit">
+			</form>
+			
+			<p>Answer: <span id="answerPart3"></span></p>
+		</div>
+	</div>
+	<script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
