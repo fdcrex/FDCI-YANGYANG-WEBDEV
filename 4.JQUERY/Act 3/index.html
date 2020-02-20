@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript: Act #3</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		body {font-family: 'Roboto', sans-serif;}
+		input, input[type=submit], button {height: 30px; margin: 10px 0 0;}
+		input[type=submit] {border-radius: 0;}
+		input {border-radius: 5px; border: solid 1px #8a8a8a; padding: 0px 12px;}
+		.wrap {margin: 0 auto; width: 800px;}
+		#part1, #part2, #part3 {margin: 0 0 35px; line-height: 20px;}
+		#answerPart1, #answerPart2, #answerPart3 {font-weight: normal;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="part1">
+			<form id="Form1" action="#" method="post">
+				<div id="empty1" style="color: #f50404; height: 16px;"></div>
+				<input type="text" name="Name" id="Name" placeholder="Enter your Name here"  required /><br>
+				<input type="text" name="Age" id="Age" placeholder="Enter your Age here" required><span id="ageVal" style="padding-left: 10px; color: #f50404;"></span><br>
+				<button type="button" onclick="add()">Add</button>
+			</form>
+			
+			<p id="fnlObj">Final Object:<br/></p>
+			<div id="rdbleFmt">
+				<p>Readable Format:</p>
+			</div>
+
+		</div>
+		<div id="part2">
+			<h2>Product Inventory</h2>
+			<form id="Form2" action="#" method="post">
+				<div id="empty" style="color: #f50404; height: 16px;"></div>
+				<input type="text" name="Name" id="Name" placeholder="Enter your Name here" required /><span id="nameVal" style="padding-left: 10px; color: #f50404;"></span><br>
+
+				<input type="text" name="Stocks" id="Stocks" placeholder="Enter Stocks here" required><span id="stockVal" style="padding-left: 10px; color: #f50404;"></span><br>
+
+				<input type="text" name="Price" id="Price" placeholder="Enter Price here"required><span id="priceVal" style="padding-left: 10px; color: #f50404;"></span><br>
+
+				<button type="button" onclick="addProducts()">Add</button>
+			</form>
+
+			<h2>Product List:</h2>
+			<p id="prodList"></p>
+			<button type="button" onclick="calProd()">Calculate</button>
+			<p id="total"></p>
+			<p id="totalVal"></p>
+		</div>
+	</div>
+	<script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
