@@ -18,12 +18,15 @@ function add(){
 		document.getElementById("empty1").innerHTML = "";
 		//var Name = wholeNum(stocks);
 		var age = ageVal(person.age);
+		var name = nameVal(person.name);
 
-		if(age !== ""){
+		if(age !== "" || name !== ""){
 			document.getElementById("ageVal").innerHTML = age;
+			document.getElementById("nameVal2").innerHTML = name;
 		}else{
 
 			document.getElementById("ageVal").innerHTML = "";
+			document.getElementById("nameVal2").innerHTML = "";
 
 			var para = document.createElement("p");
 			para.innerHTML = "name: " + person.name + ", age: " + person.age;
@@ -61,14 +64,17 @@ function addProducts(){
 
 		var resStocks = wholeNum(stocks);
 		var resPrice = priceVal(prices);
+		var resName = nameVal(name);
 
-		if(resStocks !== "" || resPrice !== ""){
+		if(resStocks !== "" || resPrice !== "" || resName !== ""){
 			document.getElementById("stockVal").innerHTML = resStocks;
 			document.getElementById("priceVal").innerHTML = resPrice;
+			document.getElementById("nameVal").innerHTML = resName;
 		}else{
 
 			document.getElementById("stockVal").innerHTML = "";
 			document.getElementById("priceVal").innerHTML = "";
+			document.getElementById("nameVal").innerHTML = "";
 
 			if((prod.length + 1) > 1){ //prod.length + 1, because first value was 0 and will execute the else below, need to filter the first input only
 				if(prodNameExist(name)){
@@ -137,12 +143,24 @@ function addElement(parentId, elementTag, html) {
     p.appendChild(newElement);
 }
 
+function nameVal(val){
+
+	var res = "";
+	if(!isNaN(val)){
+		res = "Name must not all in numeric characters."
+	}else{
+		res = "";
+	}
+
+	return res;
+}
+
 function wholeNum(val){
 
 	var res = "";
 	var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
-	if(isNaN(val)){ // identifies if input is not a number
+	if(isNaN(val)){ // identifies if input is a number
 		res += "Please enter a number.";
 	}else{
 		if(val % 1 !== 0 || format.test(val)){ // will not accept float and w/special character
@@ -162,7 +180,7 @@ function ageVal(val){
 	var res = "";
 	var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
-	if(!isNaN(val)){ // identifies if input is not a number
+	if(!isNaN(val)){ // identifies if input is a number
 
 		if(val % 1 !== 0 || format.test(val)){ // will not accept float and w/special character
 			res += "Please enter a whole number.";
@@ -174,7 +192,7 @@ function ageVal(val){
 			res = "";
 		}
 
-	}else{
+	}else{ // not a number
 		res += "Please enter a number.";
 	}
 
