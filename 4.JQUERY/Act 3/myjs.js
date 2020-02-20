@@ -115,8 +115,18 @@ function calProd(){
 		res += "<span>" + prod[p][0] + " will have a total value of " + total + "</span><br>";
 	}
 
+	if(totalVal == 0){
+
+		roundTotalVal = '<span style="color:#f50404; font-weight:bold;">There is no product.</span>';
+
+	}else{
+
+		var roundTotalVal = "<strong>Total Value:</strong> " + totalVal.toFixed(2);
+
+	}
+
 	document.getElementById("total").innerHTML = res;
-	document.getElementById("totalVal").innerHTML = "Total Value: " + totalVal;
+	document.getElementById("totalVal").innerHTML = roundTotalVal;
 }
 
 function addElement(parentId, elementTag, html) {
