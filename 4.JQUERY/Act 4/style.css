@@ -1,0 +1,36 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{margin: 0; padding: 0; border: 0;}
+
+body, textarea{font-family: 'Roboto', sans-serif;}
+textarea {height: 100px; width: 100%; border-radius: 5px; border: solid 1px #cccaca; padding: 12px; background: #fff;}
+button{border: 0; background:#ff3c00; display: block; height: 40px; width: 100px; margin: 5px 0 0; color:#fff; font-size: 14px;}
+input[type=text], select {height: 45px; margin: 0; width: 100%;}
+input, select{border-radius: 5px; border: solid 1px #cccaca; padding: 0px 12px;}
+.wrap {margin: 0 auto; width: 500px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;}
+
+.show{display: blok;}
+.hide{display: none;}
+
+h1{color: #0a0620; margin: 0 0 5px; font-family: 'Righteous';}
+h1 span{color: #ff3c00;}
+#part1{border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding: 20px; font-size: 16px; border: 1px solid #cabdbd; line-height: 25px;}
+#part1 p{padding: 0; margin: 0; }
+#part1 hr{color: #fff;}
+
+#part2{border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; padding: 20px; font-size: 16px; border: 1px solid #cabdbd;  line-height: 25px;}
+#part2 p{padding: 0; margin: 0; }
+#part2 ul{margin: 0;}
+#part2 hr{color: #fff;}
+.required{color: #f40707;}
+.errormessage{color: #f40707; font-size: 13px; height: 30px;}
+
+.col-name, .col-gender, .col-hob, .col-textarea{margin: 0 0 15px;}
+
+.disabled{background: #999695;}

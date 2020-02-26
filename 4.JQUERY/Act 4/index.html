@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript: Act #4</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>PRO<span>FILE</span></h1>
+		<div id="part1">
+			<div id="ifEmpty" class="errormessage" style="height: 30px;"></div>
+			<hr>
+			<form id="myForm">
+				<div class="col-name">
+					<p><span class="required">*</span> What is your name?</p>
+					<input type="text" name="Name" id="Name" placeholder="Enter your name here">
+					<div id="valName" class="errormessage"></div>
+				</div>
+				<div class="col-gender">
+					<p><span class="required">*</span> Gender</p>
+					<select name="Gender">
+						<option value="0">Gender</option>
+						<option value="1">Male</option>
+						<option value="2">Female</option>
+					</select>
+				</div>
+				<div id="col-hobbies" class="col-hob">
+					<p><span class="required">*</span> Hobbies</p>
+					<input type="checkbox" class="myHob" name="Hobbies" value="Sing"> Sing <br>
+					<input type="checkbox" class="myHob" name="Hobbies" value="Dance"> Dance <br>
+					<input type="checkbox" class="myHob" name="Hobbies" value="Acting"> Acting <br>
+					<input type="checkbox" class="myHob" name="Hobbies" value="Crying"> Crying <br>
+					<input type="checkbox" class="myHob" name="Hobbies" value="Eating"> Eating <br>
+					<div id="newhobbies"></div>
+					<div id="hobfunc">
+						<button type="button" id="addHobBtn" name="Add_Hobby" onclick="addHobby()">Add Hobby</button>
+					</div>
+					<div id="valHobbies" class="errormessage"></div>
+				</div>
+				<div class="col-textarea">
+					<p><span class="required">*</span> Tell me something a little about yurself.</p>
+					<textarea rows="4" id="moreInfo" name="MoreInfo" maxlength="20" placeholder="Input text here" onkeyup="characterCount()"></textarea>
+					<div id="count"><span>0</span>/20</div>
+				</div>
+				<div>
+					<button type="button" id="submit" name="Submit" onclick="formValidate()">Submit</button>
+				</div>
+			</form>
+		</div>
+		<div id="part2" class="hide"></div>
+	</div>
+	<script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
